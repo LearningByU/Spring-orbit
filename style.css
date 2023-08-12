@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(22, 22, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.byu{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.blue-orbit{
+    width: 165px;
+    height: 165px;
+    border: 1.4px solid rgb(107, 180, 245);
+    -webkit-animation: orbit 3s linear .2s infinite;
+}
+.green-orbit{
+    width: 120px;
+    height: 120px;
+    border: 1.4px solid rgb(106, 239, 161);
+    -webkit-animation: orbit 2s linear 0s infinite;
+}
+.red-orbit{
+    width: 90px;
+    height: 90px;
+    border: 1.4px solid rgb(241, 143, 143);
+    -webkit-animation: orbit 1s linear 0s infinite;
+}
+.white-orbit{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ffffff;
+    -webkit-animation: orbit 10s linear 0s infinite;
+}
+.w1{
+    transform: rotate3d(1,1,1,90deg);
+}
+.w2{
+    transform: rotate3d(1,2,.5,90deg);
+}
+.w3{
+    transform: rotate3d(.5,1,2,90deg);
+}
+@keyframes orbit{
+    from{
+        transform: rotate3d(.5,.5,.5,360deg);
+    }
+    to{
+        transform: rotate3d(0deg);
+    }
+}
